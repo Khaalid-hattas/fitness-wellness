@@ -1,0 +1,137 @@
+body {
+    background: #f4f5f7;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* HERO */
+
+.hero {
+    padding: 100px 0;
+}
+
+.hero-badge {
+    background: #d8f7e7;
+    color: #0d8d5f;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #152238;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #59657d;
+    margin-top: 20px;
+}
+
+.hero-image {
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+}
+
+/* STATS */
+
+.stats {
+    padding-bottom: 80px;
+}
+
+.stat-card {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.stat-card h2 {
+    color: #0d8d5f;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* SECTIONS */
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #152238;
+}
+
+/* SERVICES */
+
+.service-card {
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    text-align: center;
+    height: 100%;
+    transition: .3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card i {
+    font-size: 3rem;
+    color: #0d8d5f;
+    margin-bottom: 20px;
+}
+
+/* PROGRAMS */
+
+.programs {
+    padding: 80px 0;
+}
+
+.program-card {
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    height: 100%;
+}
+
+.program-card a {
+    color: #0d8d5f;
+    text-decoration: none;
+}
+
+/* CTA */
+
+.cta {
+    padding: 100px 0;
+    background: #dff8eb;
+}
+
+.cta h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background: white;
+}
+
+@media(max-width:768px) {
+
+    .hero {
+        text-align: center;
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+}
