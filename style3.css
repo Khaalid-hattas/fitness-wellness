@@ -126,9 +126,10 @@ body {
 }
 
     
-    footer {
-        background-color: #27ae60;;
-        color: white;
-        text-align: center;
-        padding: 20px 0;
-    }
+  footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
