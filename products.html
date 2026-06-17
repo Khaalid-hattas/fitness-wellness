@@ -19,9 +19,23 @@
             font-family: Arial, sans-serif;
         }
 
-        .navbar-brand {
-            font-weight: 700;
-            font-size: 1.4rem;
+        .navbar {
+            padding: 15px 0;
+        }
+
+        .nav-link {
+            color: #333 !important;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            color: var(--green) !important;
+        }
+
+        .navbar.navbar-shrink {
+            padding: 8px 0;
+            transition: 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         .hero {
@@ -87,46 +101,28 @@
 <body>
 
     <!-- NAVBAR -->
-
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
         <div class="container">
 
-            <a class="navbar-brand" href="#">
-                <i class="fa-solid fa-dumbbell text-success"></i>
+            <a class="navbar-brand fw-bold text-success" href="#">
+                <i class="fa-solid fa-dumbbell"></i>
                 FitWell
             </a>
 
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navMenu">
 
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto gap-2">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="products.html">Products</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="Subscription.html">Subscription Plan</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="partners.html">Partners</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.us.html">Contact Us</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link active text-success" href="Subscription.html">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="partners.html">Partners</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.us.html">Contact</a></li>
                     <button class="toggle-btn" id="themeToggle"></button>
                 </ul>
 
