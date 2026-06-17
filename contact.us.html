@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="darkmode.css" />
 
     <style>
       .header {
@@ -189,7 +190,11 @@
         cursor: pointer;
         transition: 0.3s;
       }
-
+      a {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+      }
       .consultation-card button:hover {
         background: #0b8b52;
       }
@@ -436,6 +441,7 @@
         <li><a href="partners.html">Partners</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.us.html" class="active">Contact</a></li>
+        <button class="toggle-btn" id="themeToggle"></button>
       </ul>
     </nav>
   </header>
@@ -529,7 +535,7 @@
       <div class="contact-form" id="contact-form">
         <h2>Send Us a Message</h2>
 
-        <form>
+        <form id="contactForm">
           <div class="input-group">
             <label>Full Name *</label>
             <input type="text" placeholder="" required />
@@ -572,6 +578,14 @@
             <i class="fas fa-paper-plane"></i>
             Send Message
           </button>
+          <div
+            id="successMessage"
+            class="alert alert-success mt-3"
+            style="display: none"
+          >
+            ✅ Thank you for filling in the form! We will get back to you within
+            24 hours.
+          </div>
         </form>
       </div>
     </section>
@@ -593,6 +607,8 @@
     </section>
 
     <div class="section-gap"></div>
+
+    <script src="darkmode.js"></script>
 
     <footer class="footer">
       <div class="footer-container">
@@ -644,5 +660,16 @@
         <p>&copy; 2026 FitWell. All Rights Reserved.</p>
       </div>
     </footer>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          alert("Thank you for filling in the form! We will contact you soon.");
+
+          this.reset();
+        });
+    </script>
   </body>
 </html>
