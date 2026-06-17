@@ -90,6 +90,17 @@ body {
   border-color: #334155;
   opacity: 1;
 }
+/* Mission & Vision cards */
+.card {
+  transition: transform 0.2s ease;
+  border-radius: 12px;
+}
+.card:hover {
+  transform: translateY(-5);
+}
+.text-success {
+  color: #16a34a !important;
+}
 
 /* Mobile */
 @media (max-width: 768px) {
