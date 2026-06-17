@@ -34,7 +34,7 @@ body {
 }
 /* HERO */
 .hero {
-    background: white;
+     background: linear-gradient(135deg, #27ae60, #1e8449);
     padding: 40px 20px;
 }
 
