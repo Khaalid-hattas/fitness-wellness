@@ -50,7 +50,6 @@ body.dark-mode {
     color: #e0e0e0 !important;
 }
 
-body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
 body.dark-mode h4,
@@ -58,12 +57,15 @@ body.dark-mode h5,
 body.dark-mode h6 {
     color: #e0e0e0 !important;
 }
-
-body.dark-mode p,
+body.dark-mode li{
+    color: white;
+}
+body.dark-mode p{
+    color: white;
+}
 body.dark-mode span,
-body.dark-mode a,
-body.dark-mode li {
-    color: #d0d0d0 !important;
+body.dark-mode a {
+    color: black!important;
 }
 
 body.dark-mode a {
